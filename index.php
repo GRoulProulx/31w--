@@ -34,6 +34,7 @@
     <div>3</div>
   </section>
 </footer>
+<h1>Guillaume Rouleau Proulx</h1>
 <?php wp_footer(); ?>
 </body>
 
