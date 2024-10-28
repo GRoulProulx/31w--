@@ -1,18 +1,40 @@
+:root {
+  --couleur0: rgb(255, 255, 255);
+  --couleur1: #303030;
+  --couleur2: #434343;
+  --couleur3: #676767;
+  --couleur4: rgb(145 63 226);
+}
+
+html,
+body {
+  margin: 0;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+
 .global {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
-
-  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--couleur0);
+  background-color: var(--couleur1);
 }
-
+/*
 .entete {
-  background-color: rgb(68, 70, 70);
+  background-color: #00dfdf;
+  
 }
+*/
+
+@include regle_couleur_back(".entete", $couleur1);
 
 .principal {
-  background-color: rgb(214, 216, 193);
+  background-color: var(--couleur1);
 }
 
 .pied {
-  background-color: rgb(53, 15, 5);
+  background-color: var(--couleur2);
 }
