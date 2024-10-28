@@ -333,9 +333,9 @@ Layout
 **************************************************/
 :root {
   --couleur0: rgb(255, 255, 255);
-  --couleur1: #303030;
-  --couleur2: #434343;
-  --couleur3: #676767;
+  --couleur1: #232323;
+  --couleur2: #383838;
+  --couleur3: #505050;
   --couleur4: rgb(145 63 226);
 }
 
@@ -373,6 +373,11 @@ body {
   background-color: var(--couleur2);
 }
 
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
 /*--------------------------------------------- base  */
 /*************************************************
 Composant
@@ -380,7 +385,6 @@ Composant
 .principal__conteneur {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -486,11 +490,11 @@ h1 {
   font-size: clamp(2rem, -0.75rem + 4.8vw, 4rem);
 }
 
-.entete__titre h1 a {
-  color: var(--couleur3);
-  background-color: var(--couleur2);
-}
-
+/* @include regle_couleur_avant_arriere(
+  ".entete__titre h1 a",
+  $couleur3,
+  $couleur2
+); */
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
 }

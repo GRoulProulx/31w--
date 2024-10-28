@@ -15,5 +15,5 @@
 - Améliorer la structure Sass
 - Créer une page d'accueil avec front-page.php
 
-- Auteur : Eddy Martin
-- Adresse URL du site sur WHC : https://gftnth00.mywhc.ca/31w11/
+- Auteur : Guillaume Rouleau Proulx
+- Adresse URL du site sur WHC : https://gftnth00.mywhc.ca/31w10/

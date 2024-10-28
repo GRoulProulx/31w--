@@ -1,8 +1,8 @@
 :root {
   --couleur0: rgb(255, 255, 255);
-  --couleur1: #303030;
-  --couleur2: #434343;
-  --couleur3: #676767;
+  --couleur1: #232323;
+  --couleur2: #383838;
+  --couleur3: #505050;
   --couleur4: rgb(145 63 226);
 }
 
@@ -37,4 +37,9 @@ body {
 
 .pied {
   background-color: var(--couleur2);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
 }
