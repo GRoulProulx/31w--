@@ -21,7 +21,7 @@
             <div class="entete__titre">
                 <h1><a href="<?php bloginfo('url') ?>"><?php bloginfo('name') ?></a></h1>
                 <h2><?php bloginfo('description') ?></h2>
-                <p>Les cours disponible</p>
+                <p>Les cours disponible :</p>
             </div>    
             <div class="entete__nav">
                 <?php wp_nav_menu(
