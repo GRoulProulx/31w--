@@ -37,9 +37,10 @@ body {
 
 .pied {
   background-color: var(--couleur2);
+  padding: 20px;
+  line-height: 1.5rem;
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  content: url(http://placehold.it/120x120);
 }
