@@ -372,6 +372,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 25px;
 }
 
 .pied__global {
@@ -391,10 +392,13 @@ h2 {
 }
 
 .logo {
+  height: 45px;
+  width: 45px;
   border: 3px solid var(--couleur4);
   border-radius: 8px;
-  align-self: center;
-  content: url(http://placehold.it/120x120);
+  background-color: var(--couleur0);
+  object-fit: cover;
+  margin-right: 10px;
 }
 
 /*--------------------------------------------- base  */
