@@ -333,9 +333,9 @@ Layout
 **************************************************/
 :root {
   --couleur0: rgb(255, 255, 255);
-  --couleur1: #232323;
-  --couleur2: #383838;
-  --couleur3: #505050;
+  --couleur1: #181818;
+  --couleur2: #272727;
+  --couleur3: #363636;
   --couleur4: rgb(145 63 226);
 }
 
@@ -350,6 +350,7 @@ body {
 
 h2 {
   padding-bottom: 20px;
+  color: var(--couleur4);
 }
 
 .global {
@@ -359,12 +360,6 @@ h2 {
   background-color: var(--couleur1);
 }
 
-/*
-.entete {
-  background-color: #00dfdf;
-
-}
-*/
 .entete {
   background-color: var(--couleur1);
 }
@@ -373,16 +368,32 @@ h2 {
   background-color: var(--couleur1);
 }
 
-.pied {
-  background-color: var(--couleur2);
+.pied__img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.pied > div {
-  padding: 20px;
-  line-height: 1.5rem;
+.pied__global {
+  padding: 10px 20px 40px 20px;
+}
+
+.pied {
+  padding: 30px;
+  line-height: 1.2rem;
+  background-color: var(--couleur1);
+}
+
+.footer__text {
+  line-height: 1.7rem;
+  font-style: italic;
+  font-size: 20px;
 }
 
 .logo {
+  border: 3px solid var(--couleur4);
+  border-radius: 8px;
+  align-self: center;
   content: url(http://placehold.it/120x120);
 }
 
@@ -398,9 +409,11 @@ Composant
 }
 
 .principal__article {
-  border: 1px solid #aaa;
+  border: 1px solid #c2c2c2;
   flex: 1 1 340px;
-  padding: 10px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: var(--couleur2);
 }
 
 /*
@@ -443,9 +456,14 @@ a {
 }
 
 .entete__titre h1,
-.entete__titre h2 {
-  padding: 20px;
+.entete__titre h2,
+.entete__titre h3 {
+  padding: 5px;
   color: var(--couleur4);
+}
+
+.entete__titre h2 {
+  padding-bottom: 30px;
 }
 
 .entete__nav {
@@ -481,20 +499,22 @@ a {
 }
 */
 .recherche {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(49, 49, 49);
 }
 .recherche__input, .recherche__bouton {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(88, 88, 88, 0.3);
   border: none;
   outline: none;
   font-size: 1.5rem;
 }
 .recherche__input:hover, .recherche__bouton:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(88, 88, 88, 0.2);
+  color: var(--couleur4);
 }
 .recherche__input:focus, .recherche__bouton:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(88, 88, 88, 0.1);
   outline: none;
+  color: var(--couleur4);
 }
 .recherche__input::placeholder {
   color: var(--couleur4);

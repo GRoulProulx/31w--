@@ -11,9 +11,14 @@ a {
 }
 
 .entete__titre h1,
-.entete__titre h2 {
-  padding: 20px;
+.entete__titre h2,
+.entete__titre h3 {
+  padding: 5px;
   color: var(--couleur4);
+}
+
+.entete__titre h2 {
+  padding-bottom: 30px;
 }
 
 .entete__nav {

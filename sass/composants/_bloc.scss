@@ -6,7 +6,9 @@
 }
 
 .principal__article {
-  border: 1px solid #aaa;
+  border: 1px solid #c2c2c2;
   flex: 1 1 340px;
-  padding: 10px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: var(--couleur2);
 }
