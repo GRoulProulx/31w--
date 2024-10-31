@@ -8,13 +8,13 @@
 
 <main class="principal">
   <section class="global">
-    <h2>Liste de cours - 3,2,1 colonnes</h2>
-    <div class="principal__conteneur">
+    <h2>Résultats de la recherche</h2>
+    <div class="principal__recherche">
       <?php if (have_posts()): ?>
         <?php while (have_posts()) :  the_post(); ?>
           <article class="principal__article">
-            <h5><?php the_title() ?></h5>
-            <p><?php the_content() ?></p>
+            <h5><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h5>
+            <p><?php echo wp_trim_words(get_the_excerpt(), 20, null); ?></p>
           </article>
         <?php endwhile; ?>
     </div>

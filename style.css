@@ -11,6 +11,9 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-31w
 */
+/* **********************************************
+Variables et mixin
+************************************************* */
 /*************************************************
 Normalize
 **************************************************/
@@ -328,22 +331,74 @@ template {
 /*************************************************
 Layout
 **************************************************/
+:root {
+  --couleur0: rgb(255, 255, 255);
+  --couleur1: #181818;
+  --couleur2: #272727;
+  --couleur3: #363636;
+  --couleur4: rgb(145 63 226);
+}
+
+html,
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  padding-bottom: 20px;
+  color: var(--couleur4);
+}
+
 .global {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
-  background-color: rgba(109, 103, 103, 0.05);
+  color: var(--couleur0);
+  background-color: var(--couleur1);
 }
 
 .entete {
-  background-color: rgb(134, 146, 146);
+  background-color: var(--couleur1);
 }
 
 .principal {
-  background-color: rgb(218, 219, 207);
+  background-color: var(--couleur1);
+}
+
+.pied__img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 25px;
+}
+
+.pied__global {
+  padding: 10px 20px 40px 20px;
 }
 
 .pied {
-  background-color: rgb(78, 78, 78);
+  padding: 30px;
+  line-height: 1.2rem;
+  background-color: var(--couleur1);
+}
+
+.footer__text {
+  line-height: 1.7rem;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.logo {
+  height: 45px;
+  width: 45px;
+  border: 3px solid var(--couleur4);
+  border-radius: 8px;
+  background-color: var(--couleur0);
+  object-fit: cover;
+  margin-right: 10px;
 }
 
 /*--------------------------------------------- base  */
@@ -353,21 +408,133 @@ Composant
 .principal__conteneur {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .principal__article {
-  border: 1px solid #aaa;
+  border: 1px solid #c2c2c2;
   flex: 1 1 340px;
-  padding: 10px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: var(--couleur2);
+}
+
+/*
+<nav class="menu-principal-container">
+<ul id="menu-principal" class="menu"><li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-56"><a href="http://localhost:81/31w-etudiant/582-4mb-animation-3d-75h/">Animation 3D</a></li>
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-57"><a href="http://localhost:81/31w-etudiant/582-4pa-interfaces-web-reactives-et-animees-cours-au-choix-75h/">Interfaces Web réactives et animées</a></li>
+<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-58"><a href="http://localhost:81/31w-etudiant/360-4j4-creation-de-jeu-en-equipe-105h/">Création de jeu en équipe</a></li>
+<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-59"><a href="http://localhost:81/31w-etudiant/582-4w4-conception-dinterfaces-et-developpement-web/">Conception d’interfaces</a></li>
+<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-60"><a href="http://localhost:81/31w-etudiant/582-4c2-gestion-de-projets-multimedias/" aria-current="page">Gestion de projets multimédias</a></li>
+</ul></nav>
+*/
+.menu-principal-container .menu {
+  display: flex;
+  list-style-type: none;
+  gap: 5px;
+}
+.menu-principal-container .menu .menu-item a {
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+  color: var(--couleur4);
+}
+
+/*
+.menu-principal-container 
+.menu-principal-container .menu
+.menu-principal-container .menu .menu-item
+.menu-principal-container .menu .menu-item a
+*/
+.entete__global {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--couleur4);
+}
+
+a {
+  text-decoration: none;
+  color: var(--couleur4);
+}
+
+.entete__titre h1,
+.entete__titre h2,
+.entete__titre h3 {
+  padding: 5px;
+  color: var(--couleur4);
+}
+
+.entete__titre h2 {
+  padding-bottom: 30px;
+}
+
+.entete__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--couleur4);
+}
+
+/*
+<form class="recherche" role="search" method="get" action="http://localhost:81/31w-etudiant/">
+  <label>
+    <input class="recherche__input" type="search" placeholder="Search..." value="" name="s">
+  </label>
+  <button class="recherche__bouton" type="submit">
+    <img src="https://s2.svgbox.net/hero-outline.svg?ic=search&amp;color=000" width="32" height="32">
+  </button>
+</form>
+
+
+*/
+/*
+.recherche {
+}
+
+.recherche__input {
+}
+
+.recherche__bouton {
+}
+
+.recherche__bouton img {
+}
+*/
+.recherche {
+  border: 1px solid rgb(49, 49, 49);
+}
+.recherche__input, .recherche__bouton {
+  background-color: rgba(88, 88, 88, 0.3);
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+.recherche__input:hover, .recherche__bouton:hover {
+  background-color: rgba(88, 88, 88, 0.2);
+  color: var(--couleur4);
+}
+.recherche__input:focus, .recherche__bouton:focus {
+  background-color: rgba(88, 88, 88, 0.1);
+  outline: none;
+  color: var(--couleur4);
+}
+.recherche__input::placeholder {
+  color: var(--couleur4);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 h1 {
-  font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  font-size: clamp(2rem, -0.75rem + 4.8vw, 4rem);
 }
 
+/* @include regle_couleur_avant_arriere(
+  ".entete__titre h1 a",
+  $couleur3,
+  $couleur2
+); */
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
 }
@@ -398,6 +565,7 @@ h1 {
 
 h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
 }
 
 h3,
