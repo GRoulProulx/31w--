@@ -7,28 +7,30 @@
 <?php get_header() ?>
 
 <main class="principal">
-    <section class="global">
-        <h2>Liste de cours - 3,2,1 colonnes</h2>
-        <div class="principal__conteneur">
-            <?php if (have_posts()): ?>
-                <?php while (have_posts()) :  the_post(); ?>
+  <section class="global">
+    <h2>Liste de cours - category-cours.php</h2>
+    <div class="principal__conteneur">
+      <?php if (have_posts()): ?>
+        <?php while (have_posts()) :  the_post(); ?>
 
-                    <?php
-                    $chaine = get_the_title();
-                    $sigle = substr($chaine, 0, 7);
-                    $position_parenthese = strpos($chaine, "(");
-                    $titre = substr($chaine, $position_parenthese -7);
-                    $duree = substr($chaine, $position_parenthese);
-                    ?>
-
-                    <article class="principal__article">
-                        <h5><?php the_title() ?></h5>
-                        <p><?php the_content() ?></p>
-                        <p><?php echo wp_trim_words(get_the_excerpt(), 20, null); ?></p>
-                    </article>
-                <?php endwhile; ?>
-        </div>
-    <?php endif ?>
-    </section>
+        <?php 
+            $chaine = get_the_title();
+            $sigle = substr($chaine,0,7);
+            $position_parenthesese = strpos($chaine, '(');
+            $titre = substr($chaine,7,$position_parenthesese-7);
+            $duree = substr($chaine,$position_parenthesese);
+            
+        ?>
+          <article class="principal__article">
+            <h5><?php echo $sigle ?></h5>
+            <h5><?php echo $titre ?></h5>
+            <p><?php echo wp_trim_words(get_the_excerpt(),10,"suite ..."); ?></p>
+            <h5>Durée: <?php echo $duree ?></h5>
+            <p>Enseignant:<?php the_field('commentaire'); ?></p>
+          </article>
+        <?php endwhile; ?>
+    </div>
+  <?php endif ?>
+  </section>
 </main>
 <?php get_footer() ?>
