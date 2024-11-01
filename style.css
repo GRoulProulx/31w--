@@ -420,6 +420,11 @@ Composant
   background-color: var(--couleur2);
 }
 
+.principal__article:hover {
+  color: var(--couleur4);
+  background-color: var(--couleur1);
+}
+
 /*
 <nav class="menu-principal-container">
 <ul id="menu-principal" class="menu"><li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-56"><a href="http://localhost:81/31w-etudiant/582-4mb-animation-3d-75h/">Animation 3D</a></li>
@@ -449,7 +454,6 @@ Composant
 */
 .entete__global {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   color: var(--couleur4);
 }
