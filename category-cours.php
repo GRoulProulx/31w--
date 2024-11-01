@@ -26,7 +26,7 @@
             <h5><?php echo $titre ?></h5>
             <p><?php echo wp_trim_words(get_the_excerpt(),10,null); ?></p>
             <h5>Durée: <?php echo $duree ?></h5>
-            <p>Enseignant:<?php the_field('commentaire'); ?></p>
+            <p>Enseignant:<?php the_field('enseignant'); ?></p>
           </article>
         <?php endwhile; ?>
     </div>
