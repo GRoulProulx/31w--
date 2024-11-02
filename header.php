@@ -20,6 +20,7 @@
         <section class="global entete__global">
             <div class="entete__titre">
                 <h1><a href="<?php bloginfo('url') ?>"><?php bloginfo('name') ?></a></h1>
+                <p class="nouvelle"><a href="https://gftnth00.mywhc.ca/31w10/2024/11/02/nouvelle1/">Nouvelle#1 </a><a href="https://gftnth00.mywhc.ca/31w10/2024/11/02/nouvelle2/">Nouvelle#2 </a><a href="https://gftnth00.mywhc.ca/31w10/2024/11/02/nouvelle3/">Nouvelle#3 </a></p>
                 <h2><?php bloginfo('description') ?></h2>
                 <h3>Les cours :</h3>
             </div>    

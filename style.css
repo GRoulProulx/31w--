@@ -391,6 +391,11 @@ h2 {
   font-size: 20px;
 }
 
+.nouvelle {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .logo {
   height: 45px;
   width: 45px;

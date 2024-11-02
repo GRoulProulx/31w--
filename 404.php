@@ -28,7 +28,7 @@
                 while ($query->have_posts()) : $query->the_post(); ?>
                     <article>
                         <p><?php the_title() ?></p>
-
+                        <p><?php echo wp_trim_words(get_the_excerpt(), 3, null); ?>
                     </article>
                 <?php endwhile; ?>
             <?php endif;
