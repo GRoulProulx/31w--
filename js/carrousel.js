@@ -16,6 +16,15 @@
 
   console.log(galerie__img.length);
 
+  img.forEach(function (elm, i) {
+    element.addEventListener("click", function () {
+      if (carrousel__figure.innerHTML == "") {
+        remplirCarrousel();
+      }
+      afficheImage(i);
+      carrousel.classList.add("carrousel--ouvrir");
+  });
+
   function remplirCarrousel() {
     for (elm of galerie__img) {
       console.log(elm.src);
