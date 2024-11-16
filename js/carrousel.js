@@ -7,7 +7,9 @@
   let carrousel__figure = document.querySelector(".carrousel__figure");
   let galerie = document.querySelector(".galerie");
   let galerie__img = document.querySelectorAll(".galerie img");
+  
   console.log(galerie__img.length);
+
   function remplirCarrousel() {
     for (elm of galerie__img) {
       console.log(elm.src);
