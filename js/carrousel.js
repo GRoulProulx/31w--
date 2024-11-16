@@ -36,11 +36,13 @@
     }
   }
 
-
-  carrousel__x.addEventListener("click", function () {
-    carrousel.classList.remove("carrousel--ouvrir");
-    console.log("fermer");
-  });
+  function creationButtonRadio() {
+    let button_radio = document.createElement("input");
+    button_radio.type = "radio";
+    button_radio.name = "img";
+    carrousel__form.appendChild(button_radio)
+    return button_radio;
+  }
 
   function afficheImage(index) {
     let carrousel__img = document.querySelectorAll(".carrousel__img");
@@ -49,4 +51,9 @@
     }
     carrousel__img[index].classList.add("carrousel__img--visible");
   }
+
+  carrousel__x.addEventListener("click", function () {
+    carrousel.classList.remove("carrousel--ouvrir");
+    console.log("fermer");
+  });
 })();
