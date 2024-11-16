@@ -20,26 +20,25 @@ function enfile_css_js()
     );
     wp_enqueue_script(
         "carrousel",
-        plugin_dir_url(__FILE__) . "/js/carrousel.js",
+        plugin_dir_url(__FILE__) . "js/carrousel.js",
         array(),
-        $version_js
+        $version_js,
+        true
     );
 }
 add_action("wp_enqueue_scripts", "enfile_css_js");
 
-function generer_carrousel()
+function genere_carrousel()
 {
-    $chaine = '
-    <div class="carrousel">
-        <button class="carrousel__x">X</button>
-        <button class="carrousel__gauche" data-direction="gauche">&#x21e6;</button>
-        <button class="carrousel__droite" data-direction="droite">&#x21e8;</button>
+    $chaine ='
+        <div class="carrousel">
+            <button class="carrousel__x">X</button>
+            <button class="carrousel__gauche">&#x21e6;</button>
+            <button class="carrousel__droite">&#x21e8;</button>
         <figure class="carrousel__figure"></figure>
-        <form class="carrousel__form">
-            <div class="radio__nav"></div>
-        </form>
+        <form class="carrousel__form"></form>
     </div>';
     return $chaine;
 }
 
-add_shortcode("carrousel", "generer_carrousel");
+add_shortcode("carrousel", "genere_carrousel");
