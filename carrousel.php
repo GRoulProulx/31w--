@@ -30,8 +30,7 @@ add_action("wp_enqueue_scripts", "enfile_css_js");
 
 function genere_carrousel()
 {
-    $chaine =
-        '<button class="carrousel__bouton">Ouvrir</button>;
+    $chaine ='
         <div class="carrousel">
             <button class="carrousel__x">X</button>
             <button class="carrousel__gauche">gauche</button>

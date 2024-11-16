@@ -7,7 +7,13 @@
   let carrousel__figure = document.querySelector(".carrousel__figure");
   let galerie = document.querySelector(".galerie");
   let galerie__img = document.querySelectorAll(".galerie img");
-  
+  let carrousel__gauche = document.querySelector(".carrousel__gauche");
+  let carrousel__droit = document.querySelector(".carrousel__droit");
+  let carrousel__form = document.querySelector(".carrousel__form");
+  let img = document.querySelectorAll(".galerie > figure");
+  let numData = 0;
+  let radio = 0;
+
   console.log(galerie__img.length);
 
   function remplirCarrousel() {
@@ -20,14 +26,6 @@
     }
   }
 
-  carrousel__bouton.addEventListener("click", function () {
-    if (carrousel__figure.innerHTML === "") {
-      remplirCarrousel();
-    }
-    afficheImage(4);
-    carrousel.classList.add("carrousel--ouvrir");
-    console.log("Ouvrir");
-  });
 
   carrousel__x.addEventListener("click", function () {
     carrousel.classList.remove("carrousel--ouvrir");
