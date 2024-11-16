@@ -23,6 +23,7 @@
       }
       afficheImage(i);
       carrousel.classList.add("carrousel--ouvrir");
+    });
   });
 
   function remplirCarrousel() {
