@@ -50,7 +50,23 @@
       carrousel__img[i].classList.remove("carrousel__img--visible");
     }
     carrousel__img[index].classList.add("carrousel__img--visible");
+    
+    carrousel__droit.addEventListener("click", function foward() {
+      i++;
+      if (i >= galerie__img.length) {
+        i = 0;
+      }
+      afficheImage(i);
+    });
+     carrousel__gauche.addEventListener("click", function back() {
+       i--;
+       if (i < 0) {
+         i = galerie__img.length - 1;
+       }
+       afficheImage(i);
+     });
   }
+
 
   carrousel__x.addEventListener("click", function () {
     carrousel.classList.remove("carrousel--ouvrir");
