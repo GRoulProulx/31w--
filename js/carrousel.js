@@ -11,8 +11,8 @@
   let carrousel__droit = document.querySelector(".carrousel__droit");
   let carrousel__form = document.querySelector(".carrousel__form");
   let img = document.querySelectorAll(".galerie > figure");
-  let numData = 0;
-  let radio = 0;
+  let numDataSet = 0;
+  let imgDataSet = 0;
 
   console.log(galerie__img.length);
 
@@ -33,6 +33,11 @@
       img.src = elm.src; // copie une image de la galerie vers le carrousel
       img.classList.add("carrousel__img");
       carrousel__figure.appendChild(img);
+
+      let btn_rad = creationButtonRadio();
+      let btnData = (btn_rad.dataset.num = numDataSet++);
+      let imgDataSet = (elm.dataset.num = imgDataSet++);
+      
     }
   }
 
