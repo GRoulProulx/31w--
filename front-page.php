@@ -1,4 +1,13 @@
-<?php
+
+ <?php get_header() ?>
+
+<!-- /**
+ * index.php - Le modèle par défaut de wordpress
+ */ -->
+
+
+<main class="principal">
+  <?php
   // Récupérer les données du Customizer
   $hero_title = get_theme_mod('hero_title', 'Bienvenue sur mon site');
   $hero_subtitle = get_theme_mod('hero_subtitle', 'Your success starts here.');
@@ -16,14 +25,6 @@
       <?php endif; ?>
     </div>
   </section>
-
-<!-- /**
- * index.php - Le modèle par défaut de wordpress
- */ -->
-?>
-<?php get_header() ?>
-
-<main class="principal">
   <section class="global">
     <h2>Liste de vos cours - </h2>
     <div class="principal__conteneur">
