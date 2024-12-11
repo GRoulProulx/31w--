@@ -1,18 +1,73 @@
+:root {
+  --couleur0: rgb(255, 255, 255);
+  --couleur1: #181818;
+  --couleur2: #272727;
+  --couleur3: #363636;
+  --couleur4: rgb(145 63 226);
+}
+
+html,
+body {
+  margin: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  padding-bottom: 20px;
+  color: var(--couleur4);
+}
+
 .global {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
-
-  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--couleur0);
+  background-color: var(--couleur1);
 }
 
-.entete {
-  background-color: rgb(68, 70, 70);
-}
+@include regle_couleur_back(".entete", $couleur1);
 
 .principal {
-  background-color: rgb(214, 216, 193);
+  background-color: var(--couleur1);
+}
+
+.pied__img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 25px;
+}
+
+.pied__global {
+  padding: 10px 20px 40px 20px;
 }
 
 .pied {
-  background-color: rgb(53, 15, 5);
+  padding: 30px;
+  line-height: 1.2rem;
+  background-color: var(--couleur1);
+}
+
+.footer__text {
+  line-height: 1.7rem;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.nouvelle {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.logo {
+  height: 45px;
+  width: 45px;
+  border: 3px solid var(--couleur4);
+  border-radius: 8px;
+  background-color: var(--couleur0);
+  object-fit: cover;
+  margin-right: 10px;
 }
