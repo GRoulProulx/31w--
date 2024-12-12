@@ -19,6 +19,7 @@ Variables et mixin
 Normalize
 **************************************************/
 @import "normalize/normalize";
+@import "base/heading";
 /*************************************************
 Layout
 **************************************************/
@@ -31,8 +32,8 @@ Composant
 @import "composants/navigation";
 @import "composants/entete";
 @import "composants/recherche";
+@import "composants/hero";
 
-@import "base/heading";
 // @import "base/espacement";
 // @import "base/lien";
 // @import "base/list";

@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>31W</title>
+    <title>Club voyage 101</title>
     <?php wp_head(); ?>
 </head>
 
@@ -26,9 +26,9 @@
                     <h2><?php bloginfo('description'); ?></h2>
                 <?php endif; ?>
                 <h1><a href="<?php bloginfo('url') ?>"><?php bloginfo('name') ?></a></h1>
-                <p class="nouvelle"><a href="https://gftnth00.mywhc.ca/31w10/2024/11/02/nouvelle1/">Nouvelle#1 </a><a href="https://gftnth00.mywhc.ca/31w10/2024/11/02/nouvelle2/">Nouvelle#2 </a><a href="https://gftnth00.mywhc.ca/31w10/2024/11/02/nouvelle3/">Nouvelle#3 </a></p>
+                <p class="nouvelle">Choissez parmit 40 destinations</p>
                 <h2><?php bloginfo('description') ?></h2>
-                <h3>Les cours :</h3>
+                <h3>NMT Club Voyage 101</h3>
             </div>
             <div class="entete__nav">
                 <?php wp_nav_menu(
