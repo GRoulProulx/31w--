@@ -608,7 +608,7 @@ a {
 }
 
 .hero p {
-  font-size: clamp(1rem, -0.75rem + 2.8vw, 2rem);
+  font-size: clamp(0.5rem, -0.32rem + 1.4vw, 1rem);
   margin: 20px 0;
   color: rgba(0, 0, 0, 0.9);
 }
@@ -618,19 +618,20 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  height: 75vh;
+  height: 100vh;
+  padding-top: 18rem;
 }
 
 .hero__cta {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #0073aa;
+  background: var(--couleur4);
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .hero__cta:hover {
-  background: #005177;
+  background: #74216b;
 }/*# sourceMappingURL=style.css.map */

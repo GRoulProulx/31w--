@@ -1,4 +1,6 @@
 <?php
+add_theme_support('post-thumbnails');
+
 
 function theme_31w_customize_register($wp_customize)
 {

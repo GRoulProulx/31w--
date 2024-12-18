@@ -1,5 +1,4 @@
-
- <?php get_header() ?>
+<?php get_header() ?>
 
 <!-- /**
  * index.php - Le modèle par défaut de wordpress
@@ -27,8 +26,36 @@
       <?php endif; ?>
     </div>
   </section>
-  <section class="global">
-    <h2>Liste de destinations - front</h2>
+  <section id="favorite-destinations">
+    <h2>Destinations Favorites</h2>
+    <div class="destination-blocks">
+        <?php
+        
+        $destinations = new WP_Query(array(
+            'category_name' => 'favoris',
+            'posts_per_page' => 6
+        ));
+ 
+        
+        while ($destinations->have_posts()) : $destinations->the_post();
+        ?>
+            <div class="destination-block">
+                <div class="destination-image">
+                    <?php
+                        if (has_post_thumbnail()) {
+                            the_post_thumbnail('medium'); 
+                        }
+                    ?>
+                </div>
+ 
+                <h3><?php the_title(); ?></h3>
+                <p><?php the_excerpt(); ?></p>
+                <a href="<?php the_permalink(); ?>">En savoir plus</a>
+            </div>
+        <?php endwhile; wp_reset_postdata(); ?>
+    </div>
+</section>
+    <h2>Liste de destinations</h2>
     <div class="principal__conteneur">
       <?php if (have_posts()): ?>
         <?php while (have_posts()) :  the_post(); ?>
@@ -37,6 +64,7 @@
             <p><?php echo wp_trim_words(get_the_excerpt(), 20, null); ?></p>
           </article>
         <?php endwhile; ?>
+
     </div>
   <?php endif ?>
   </section>
