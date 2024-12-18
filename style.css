@@ -339,26 +339,32 @@ h1 {
 ); */
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  color: var(--couleur4);
 }
 
 h3 {
   font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+  color: var(--couleur4);
 }
 
 h4 {
   font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
+  color: var(--couleur4);
 }
 
 h5 {
   font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
+  color: var(--couleur4);
 }
 
 h6 {
   font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
+  color: var(--couleur4);
 }
 
 P {
   font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+  color: var(--couleur0);
 }
 
 h1 {
@@ -565,6 +571,10 @@ a {
 .recherche__bouton img {
 }
 */
+label {
+  color: var(--couleur0);
+}
+
 .recherche {
   border: 1px solid rgb(49, 49, 49);
 }

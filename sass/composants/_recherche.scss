@@ -24,28 +24,31 @@
 .recherche__bouton img {
 }
 */
+label {
+    color: var(--couleur0);
+}
 
 .recherche {
-  border: 1px solid rgb(49, 49, 49);
-  &__input,
-  &__bouton {
-    background-color: rgba(88, 88, 88, 0.3);
-    border: none;
-    outline: none;
-    font-size: 1.5rem;
-    &:hover {
-      background-color: rgba(88, 88, 88, 0.2);
-      color: var(--couleur4);
+    border: 1px solid rgb(49, 49, 49);
+    &__input,
+    &__bouton {
+        background-color: rgba(88, 88, 88, 0.3);
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        &:hover {
+            background-color: rgba(88, 88, 88, 0.2);
+            color: var(--couleur4);
+        }
+        &:focus {
+            background-color: rgba(88, 88, 88, 0.1);
+            outline: none;
+            color: var(--couleur4);
+        }
     }
-    &:focus {
-      background-color: rgba(88, 88, 88, 0.1);
-      outline: none;
-      color: var(--couleur4);
+    &__input::placeholder {
+        color: var(--couleur4);
+        font-size: 1.5rem;
+        font-weight: bold;
     }
-  }
-  &__input::placeholder {
-    color: var(--couleur4);
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
 }
