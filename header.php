@@ -27,7 +27,6 @@
                 <?php endif; ?>
                 <h1><a href="<?php bloginfo('url') ?>"><?php bloginfo('name') ?></a></h1>
                 <h2><?php bloginfo('description') ?></h2>
-                <h3>NMT Club Voyage 101</h3>
             </div>
             <div class="entete__nav">
                 <?php wp_nav_menu(
