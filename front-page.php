@@ -26,6 +26,7 @@
       <?php endif; ?>
     </div>
   </section>
+  <h2>Galerie d'images</h2>
   <?php
   $args = array(
     'name' => 'carrousel',
@@ -72,7 +73,32 @@
       wp_reset_postdata(); ?>
     </div>
   </section>
- 
+  <form action="">
+    <div>
+      <label for="">Nom
+        <input class="recherche__input" type="text" name="nom" placeholder="Votre nom">
+      </label>
+    </div>
+    <div>
+      <label for="">Prénom
+        <input class="recherche__input" type="text" name="prenom" placeholder="Votre prénom">
+      </label>
+    </div>
+    <div>
+      <label for="">Courriel
+        <input class="recherche__input" type="email" name="courriel" placeholder="Votre courriel">
+      </label>
+    </div>
+    <div>
+      <label for="">Téléphone
+        <input class="recherche__input" type="text" name="telephone" placeholder="Votre téléphone">
+      </label>
+    </div>
+    <div>
+      <input class="recherche__input" type="submit" value="S'inscrire">
+    </div>
+
+  </form>
   <h2>Liste de destinations</h2>
   <div class="principal__conteneur">
     <?php if (have_posts()): ?>

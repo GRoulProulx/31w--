@@ -26,7 +26,6 @@
                     <h2><?php bloginfo('description'); ?></h2>
                 <?php endif; ?>
                 <h1><a href="<?php bloginfo('url') ?>"><?php bloginfo('name') ?></a></h1>
-                <p class="nouvelle">Choissez parmit 40 destinations</p>
                 <h2><?php bloginfo('description') ?></h2>
                 <h3>NMT Club Voyage 101</h3>
             </div>
