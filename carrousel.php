@@ -3,7 +3,7 @@
 plugin name: Carrousel
 description: Affiche un carrousel à partir d'une galerie d'image
 version: 1.0.0
-author: Eddy Martin
+author: Guillaume Proulx
 author uri: https://referenced.ca
 */
 
@@ -26,17 +26,17 @@ function enfile_css_js()
         true
     );
 }
-add_action("wp_enqueue_scripts", "enfile_css_js");
+add_action("wp_enqueue_scripts", "enfile_css_js"); 
 
 function genere_carrousel()
 {
-    $chaine =
-        '<button class="carrousel__bouton">Ouvrir</button>;
+    $chaine ='
         <div class="carrousel">
             <button class="carrousel__x">X</button>
-            <button class="carrousel__gauche">gauche</button>
-            <button class="carrousel__droite">droite</button>
+            <button class="carrousel__gauche">&#x21e6;</button>
+            <button class="carrousel__droit">&#x21e8;</button>
         <figure class="carrousel__figure"></figure>
+        <form class="carrousel__form"></form>
     </div>';
     return $chaine;
 }
