@@ -2,14 +2,8 @@
 
 ## Introduction à un système de gestion de contenu
 
-### Les objectifs du thème
+## Épreuve Finale
 
-- Vous aider à réaliser votre propre thème
-- Documenter les concepts de base
-- Ajouter les références qui ont permis de solutionner certains problèmes
+### objectif : Utilisez la structure de thème de mon TP2 pour réaliser le développement de l’épreuve finale. 
 
-## Exercice-1
-
-### objectif : Réaliser un thème de base
-
-- Auteur : Eddy Martin
+- Auteur : Guillaume Proulx
