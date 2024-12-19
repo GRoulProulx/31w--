@@ -15,8 +15,11 @@ get_header();
           <article class="principal__article">
             <h5><?php the_title(); ?></h5>
             <p><?php the_content(); ?></p>
+            <div class="pays-details">
+            </div>
             <?php echo do_shortcode('[carrousel]'); ?>
           </article>
+          <?php echo do_shortcode('[extraire_categorie]'); ?>
         <?php endwhile; ?>
     </div>
   <?php endif ?>

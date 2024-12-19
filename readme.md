@@ -16,4 +16,4 @@
 - Créer une page d'accueil avec front-page.php
 
 - Auteur : Guillaume Rouleau Proulx
-- Adresse URL du site sur WHC : https://gftnth00.mywhc.ca/31w12/
+- Adresse URL du site sur WHC : https://gftnth00.mywhc.ca/31w10/
